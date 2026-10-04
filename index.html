@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ved | Child Artist Portfolio</title>
+<meta name="description" content="Ved's child artist portfolio">
+<style>
+:root{--bg:#f7f5f1;--ink:#171717;--muted:#666;--card:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(247,245,241,.88);backdrop-filter:blur(12px);border-bottom:1px solid #ddd}
+.logo{font-weight:800;letter-spacing:2px}
+nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-size:14px}
+.hero{min-height:100vh;padding:110px 7% 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero-photo{width:100%;max-width:620px;height:78vh;object-fit:cover;border-radius:28px;box-shadow:0 25px 70px rgba(0,0,0,.16)}
+.kicker{text-transform:uppercase;letter-spacing:4px;font-size:12px;color:var(--muted);font-weight:700}
+h1{font-size:clamp(70px,12vw,150px);line-height:.82;margin:20px 0}
+.lead{font-size:22px;line-height:1.55;color:#4e4e4e;max-width:560px}
+.pill{display:inline-block;margin-top:18px;padding:12px 18px;border:1px solid #bbb;border-radius:999px;font-size:13px}
+section{padding:90px 7%;max-width:1200px;margin:auto}
+h2{font-size:42px;margin:0 0 24px}
+.intro{max-width:760px;font-size:19px;line-height:1.75;color:#555}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);padding:28px;border-radius:22px;box-shadow:0 8px 28px rgba(0,0,0,.06)}
+.card h3{margin-top:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gallery figure{margin:0;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.07)}
+.gallery img{display:block;width:100%;height:560px;object-fit:cover}
+.gallery figcaption{padding:16px 18px;color:#666;font-size:14px}
+.contact{max-width:none;background:#171717;color:#fff;text-align:center;padding:90px 7%}
+.contact p{color:#ccc;max-width:620px;margin:0 auto 24px;line-height:1.7}
+.contact .note{font-size:12px;color:#888}
+footer{text-align:center;padding:25px;color:#777;font-size:12px}
+@media(max-width:800px){
+ nav a{margin-left:10px;font-size:12px}
+ .hero{grid-template-columns:1fr;padding-top:95px}
+ .hero-photo{height:68vh;max-width:none}
+ .cards,.gallery{grid-template-columns:1fr}
+ .gallery img{height:auto;max-height:none}
+ section{padding:65px 6%}
+ h2{font-size:34px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">VED</div>
+  <div><a href="#about">About</a><a href="#gallery">Portfolio</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <img class="hero-photo" src="ved-1.jpg" alt="Ved">
+  <div>
+    <div class="kicker">Child Artist Portfolio</div>
+    <h1>Ved</h1>
+    <p class="lead">A cheerful and energetic young talent who enjoys sports, storytelling, creative activities and being in front of the camera.</p>
+    <span class="pill">Parent-managed portfolio • Mumbai / Virar</span>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Ved</h2>
+  <p class="intro">Ved is a young, enthusiastic child who enjoys learning, playing and expressing himself. He loves football, basketball and cricket, and enjoys stories and creative activities. This portfolio is intended for casting, modelling, advertising and other age-appropriate creative opportunities.</p>
+</section>
+
+<section>
+  <h2>Interests</h2>
+  <div class="cards">
+    <div class="card"><h3>⚽ Football</h3><p>Enjoys practising dribbling, passing and playing football.</p></div>
+    <div class="card"><h3>🏀 Basketball</h3><p>Loves basketball and enjoys practising his skills.</p></div>
+    <div class="card"><h3>🎭 Creative</h3><p>Enjoys storytelling, expressions and imaginative activities.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Portfolio</h2>
+  <div class="gallery">
+    <figure><img src="ved-1.jpg" alt="Ved in casual outfit"><figcaption>Casual look</figcaption></figure>
+    <figure><img src="ved-2.jpg" alt="Ved in traditional outfit"><figcaption>Traditional look</figcaption></figure>
+    <figure><img src="ved-3.jpg" alt="Ved in denim outfit"><figcaption>Denim look</figcaption></figure>
+    <figure><img src="ved-4.jpg" alt="Ved at an airport"><figcaption>Travel / lifestyle look</figcaption></figure>
+    <figure><img src="ved-5.jpg" alt="Ved outdoors"><figcaption>Outdoor look</figcaption></figure>
+    <figure><img src="ved-6.jpg" alt="Ved in a casual cap"><figcaption>Playful casual look</figcaption></figure>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>For casting and collaboration enquiries, please contact Ved's parent or guardian.</p>
+  <p class="note">Add your preferred parent/guardian email or phone number before publishing this site.</p>
+</section>
+
+<footer>© Ved • Parent-managed portfolio</footer>
+</body>
+</html>
